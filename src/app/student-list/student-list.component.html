@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">AGE</th>
+        <th scope="col">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students"> 
+        <th scope="row">{{student.sid}}</th>
+        <td>{{student.sname}}</td>
+        <td>{{student.sage}}</td>
+        <td>{{student.snumber}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

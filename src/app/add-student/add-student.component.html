@@ -1,0 +1,35 @@
+<div class="container col-md-6" >
+    <br>
+    <h3 style="color: black;">Add Student Detail Form</h3>
+    <br>
+    
+    <form class="container" (ngSubmit)="addStudentData()">
+        <div class="mb-3 ">
+            <label for="inputPassword" >Student Id</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="sId" name="sId" [(ngModel)]="student.sid">
+            </div>
+          </div>
+          <div class="mb-3 ">
+            <label for="inputPassword" >Student Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="sName" name="sName" [(ngModel)]="student.sname" >
+            </div>
+          </div>
+          <div class="mb-3 ">
+            <label for="inputPassword" >Student Age</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="sAge" name="sAge" [(ngModel)]="student.sage">
+            </div>
+          </div>
+          <div class="mb-3 ">
+            <label for="inputPassword" >Student Phone Number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="sNumber" name="sNumber" [(ngModel)]="student.snumber">
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-dark">Register</button>
+    </form>
+
+</div>
